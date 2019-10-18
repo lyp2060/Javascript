@@ -197,6 +197,110 @@ fruits.pop()
 fruits.join('*')
 
 
+// concat to merge two arrays
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var myChildren = myGirls.concat(myBoys);
+
+//concat three arrays
+
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias", "Linus"];
+var arr3 = ["Robin", "Morgan"];
+
+var myChildren = arr1.concat(arr2, arr3); 
+// slice, create a new array by get array[start] and array[end] but not inlcude array[end], orignal array will not touch 
+array.slice(start, end)
+
+// kyes() return a new Array Iterator object that contains the keys for each
+
+arr.keys()
+arr.shift(); // remove the first element and remove it, it will change the length of the arr
+arr.unshift(4,5); // add 4,5 in the begining of the arr
+arr.short(); // sorts the elements of an array in place and returns the sorted array 
+arr.toString(); // returns an array as a comma seperated string 
+arr.reverse(); //reverse it 
+arr.sort(function(a,b) {return a-b}); // doindg the number sorting 
+
+// forEach 
+
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt = txt + index+ "<br>"; 
+}
+
+// will output 0,1,2,3,4
+```
+
+### javascript conditions
+
+```javascript 
+
+// if 
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+
+if (hour < 18) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+   
+// if , else if and else 
+if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+ 
+// switch statement
+
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
 
 ```
+
+## for loop etc
+
+```javascript
+
+var text = "";
+var i;
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+
+```
+
 
